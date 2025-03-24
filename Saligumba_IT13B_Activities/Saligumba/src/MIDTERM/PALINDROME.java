@@ -10,6 +10,7 @@ public class PALINDROME {
         String original;
         Scanner in= new Scanner(System.in);
         System.out.print("Enter a word: ");
+       
         original=in.nextLine();
         
         String reverse_original= new StringBuilder(original).reverse().toString();
@@ -18,6 +19,7 @@ public class PALINDROME {
             System.out.println("Palindrome");
         } else {
             System.out.println("Not a Palindrome");
+         
         }
         
         
