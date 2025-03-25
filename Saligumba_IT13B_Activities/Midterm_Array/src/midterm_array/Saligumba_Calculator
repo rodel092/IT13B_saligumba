@@ -1,0 +1,45 @@
+import java.util.Scanner;
+
+
+public class Calculator {
+    public static void main(String[]  args) {
+         
+         Scanner in= new Scanner(System.in);
+         
+         System.out.println("First number: ");
+         double n1= in.nextDouble();
+         
+         System.out.println("Second number: ");
+         double n2= in.nextDouble();
+         
+         System.out.println("The operators (+, -, *, /): ");
+         char operators= in.next().charAt(0);
+         
+         double result;
+         switch(operators) {
+            case '+':
+            result = n1 + n2; 
+            break;
+            case '-':
+            result = n1 - n2;
+            break;
+            case '*':
+            result = n1 * n2;
+            break;
+            case '/':
+            result = n1 / n2;
+            break;           
+                      
+            default:
+            System.out.println("Error"); 
+            return;
+    }
+         System.out.println("The total: " + result);
+         
+           
+            
+           
+                
+    
+    }
+}
